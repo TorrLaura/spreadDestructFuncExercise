@@ -5,11 +5,21 @@ const jPDinos = [
 ];
 console.log(jPDinos);
 
-function seeDinos = {
+function seeDinos (a, ...b){
     console.log(a);
     console.log(b);
-    console.log(c);
+    
 }
-seeDinos(jPDinos);
+seeDinos(...jPDinos);
 
+const JPCharacters = {
+    alanGrant: "Sam Neill", 
+    ellieSattler: "Laura Dern",
+    ianMalcolm: "Jeff Goldblum"
+};
 
+seeCharacters = ({ellieSattler}) => {
+    console.log(ellieSattler);
+}
+
+seeCharacters(JPCharacters);
